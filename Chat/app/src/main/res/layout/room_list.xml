@@ -1,0 +1,67 @@
+<RelativeLayout android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/bground"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/things"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editRoomName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="8"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Add new room"
+            android:inputType="textMultiLine"
+            android:maxLength="300"
+            android:maxWidth="2dip"
+            android:padding="5dp"
+            android:scrollbars="vertical"
+            android:textColorHint="#a9a7a7"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/addRoom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/addroom"
+            android:onClick="addNewRoom" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/room_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="20dp"
+        android:layout_below="@id/things"
+        android:dividerHeight="5dp"
+        android:divider="#1c7401" />
+
+
+</RelativeLayout>
+
+
+
+
+
